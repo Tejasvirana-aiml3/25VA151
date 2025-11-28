@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+  .block div{
+    display:block;
+    background:lightblue;
+    margin:4px;
+    padding:6px;
+  }
+  .inline span{
+    display:inline;
+    background:lightgreen;
+    margin-right:6px;
+    padding:4px;
+  }
+  .ib a{
+    display:inline-block;
+    background:lightyellow;
+    margin-right:6px;
+    padding:6px;
+    border:1px solid #000;
+    text-decoration:none;
+  }
+  img{
+    float:left;
+    width:80px;
+    height:80px;
+    margin:6px;
+    border:1px solid #000;
+  }
+  .clear{
+    clear:both;
+    background:#eee;
+    padding:6px;
+    margin-top:6px;
+    }
+</style>
+</head>
+<body>
+<h3>Block</h3>
+<div class="block">
+  <div>Home</div><div>About</div><div>Contact</div>
+</div>
+
+<h3>Inline</h3>
+<div class="inline">
+  <span>Home</span><span>Shop</span><span>FAQ</span>
+</div>
+
+<h3>Inline-Block</h3>
+<div class="ib">
+  <a href="#">Home</a><a href="#">Products</a><a href="#">Offers</a>
+</div>
+
+<h3>Float & Clear</h3>
+<img src="https://picsum.photos/80">
+<p>Text wraps around the floated image.</p>
+<div class="clear">Cleared section</div>
+</body>
+</html>

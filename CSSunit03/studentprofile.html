@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Student Profile Card - Flexbox</title>
+<style>
+    body{
+        font-family: Arial;
+        background:#c5ccd4;
+        display:flex;
+        justify-content:center;
+        align-items:center;
+        height:100vh;
+        margin:0;
+    }
+
+    .card{
+        background:#c3aeae;
+        width:300px;
+        padding:20px;
+        border-radius:10px;
+        box-shadow:0 0 10px rgba(0,0,0,0.1);
+        display:flex;                 /* Flexbox enabled */
+        flex-direction:column;        /* vertical layout */
+        justify-content:center;       /* center content vertically */
+        align-items:center;           /* center content horizontally */
+        text-align:center;
+    }
+
+    .card img{
+        width:120px;
+        height:120px;
+        border-radius:50%;
+        margin-bottom:15px;
+        object-fit:cover;
+    }
+
+    .details{
+        display:flex;
+        flex-direction:column;
+        gap:6px;
+    }
+</style>
+</head>
+<body>
+
+<div class="card">
+    <img src="https://picsum.photos/200" alt="student photo">
+
+    <div class="details">
+        <h2>Tejasvi Rana</h2>
+        <p><b>Class:</b> B.Tech (Computer Science in Artificial intelligence and machine learning)</p>
+        <p><b>Roll No: 2025B15310020</b></p>
+        <p><b>Year: 1st Year:</b> A</p>
+    </div>
+</div>
+
+</body>
+</html>
