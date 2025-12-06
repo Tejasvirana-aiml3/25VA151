@@ -33,3 +33,29 @@ ul li{
     float:left;margin:30px;
 
 }
+*{
+    margin:0;
+    padding:0;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.card{
+    padding: 2px;
+    border: 2px solid rgb(75,82,92);
+    border-radius: 10px;
+    background-color:#937;
+    text-align: center;
+}
+body{
+    padding: min(50px,7%);
+    background-color:aliceblue;
+    text-align: center;
+}
+h1{
+    margin: 30px;
+}
+.grid-container{
+    display: grid;
+    border: 1px solid purple;
+    grid-template-columns: 250px 250px 250px;
+}
+
