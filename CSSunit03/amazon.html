@@ -1,0 +1,191 @@
+<!DOCTYPE html><html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Simple Amazon Clone</title>
+  <style>
+    *{
+      margin:0;
+      padding:0;
+      box-sizing:border-box;
+      font-family: Arial, sans-serif;
+    }body{
+  background:#e3e6e6;
+}
+
+/* Navbar */
+.navbar{
+  background:#131921;
+  color:white;
+  padding:12px 20px;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+}
+
+.logo{
+  font-size:24px;
+  font-weight:bold;
+  color:#f3a847;
+  cursor:pointer;
+}
+
+.logo:hover{
+  color:#ff9900;
+}
+
+.search-box{
+  width:50%;
+}
+
+.search-box input{
+  width:100%;
+  padding:8px;
+  border:none;
+  border-radius:4px;
+}
+
+.nav-links span{
+  margin-left:15px;
+  cursor:pointer;
+  font-size:14px;
+  transition: color 0.3s ease, text-decoration 0.3s ease;
+}
+
+.nav-links span:hover{
+  color:#f3a847;
+  text-decoration: underline;
+}
+
+/* Banner */
+.banner{
+  background:#febd69;
+  padding:20px;
+  text-align:center;
+  font-size:18px;
+  font-weight:bold;
+}
+
+/* Hero Image */
+.hero{
+  width:100%;
+  overflow:hidden;
+}
+
+.hero img{
+  width:100%;
+  height:300px;
+  object-fit:cover;
+}
+
+/* Products */
+.products{
+  display:grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap:20px;
+  padding:20px;
+}
+
+.card{
+  background:white;
+  padding:15px;
+  border-radius:8px;
+  text-align:center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+
+
+.card img{
+  width:100%;
+  height:150px;
+  object-fit:cover;
+  margin-bottom:10px;
+}
+
+.card h3{
+  font-size:16px;
+  margin-bottom:8px;
+  cursor:pointer;
+  transition: color 0.3s ease, text-decoration 0.3s ease;
+}
+
+.card h3:hover{
+  color:#c45500;
+  text-decoration: underline;
+}
+
+.card p{
+  color:green;
+  margin-bottom:10px;
+}
+
+.card button{
+  background:#f0c14b;
+  border:1px solid #a88734;
+  padding:6px 10px;
+  cursor:pointer;
+  border-radius:4px;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.card button:hover{
+  background:#ddb347;
+  transform: scale(1.05);
+}
+
+/* Footer */
+footer{
+  background:#131921;
+  color:white;
+  text-align:center;
+  padding:15px;
+  margin-top:20px;
+}
+
+  </style>
+</head>
+<body>  <!-- Navbar -->  <div class="navbar">
+    <div class="logo">amazon</div>
+    <div class="search-box">
+      <input type="text" placeholder="Search Amazon">
+    </div>
+    <div class="nav-links">
+      <span>Hello, Sign in</span>
+      <span>Orders</span>
+      <span>Cart</span>
+    </div>
+  </div>  <!-- Banner -->  <div class="banner">
+    Welcome to Amazon – Simple Clone Webpage
+  </div>  <!-- Hero Image -->  <div class="hero">
+    <img src="https://m.media-amazon.com/images/G/01/apple/Laptops_page_Mac_Family.png" alt="Amazon Banner Image">
+  </div>  <!-- Products -->  <div class="products">
+    <div class="card">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTV-6ak-V8AD7NrLiEnY9oJhMy0SdWzBkIOiw&s" alt="Product">
+      <h3>Wireless Headphones</h3>
+      <p>₹2,999</p>
+      <button>Add to Cart</button>
+    </div><div class="card">
+  <img src="https://m.media-amazon.com/images/G/31/IMG24/Smart_Watches/Jupiter25/1400x800_E2LIVE._SX1242_QL85_.jpg" alt="Product">
+  <h3>Smart Watch</h3>
+  <p>₹1,999</p>
+  <button>Add to Cart</button>
+</div>
+
+<div class="card">
+  <img src="https://www.jbl.com/on/demandware.static/-/Library-Sites-SharedLibrary-JB/default/dw2a4d57a1/glp/portables-emea-ccpi-v2/images/main-products/boombox3.png" alt="Product">
+  <h3>Bluetooth Speaker</h3>
+  <p>₹1,499</p>
+  <button>Add to Cart</button>
+</div>
+
+<div class="card">
+  <img src="https://icon.in/cdn/shop/files/4_8ab227bf-d688-402b-955e-a805550eee76.jpg?v=1756985974&width=1946" alt="Product">
+  <h3>Laptop Backpack</h3>
+  <p>₹899</p>
+  <button>Add to Cart</button>
+</div>
+
+  </div>  <!-- Footer -->  <footer>
+    © 2025 Amazon Clone | Created for College Project
+  </footer></body>
+</html>
