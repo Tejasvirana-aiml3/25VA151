@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>E-commerce Navbar + Product Grid</title>
+
+<style>
+    body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+        background: #f3f3f3;
+    }
+
+    
+    .navbar {
+        background-color: #ff6a00;
+        color: white;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 12px 20px;
+    }
+
+    .logo {
+        font-size: 22px;
+        font-weight: bold;
+    }
+
+    .nav-links {
+        display: flex;
+        gap: 20px;
+    }
+
+    .nav-links a {
+        text-decoration: none;
+        color: white;
+        font-size: 16px;
+    }
+
+    .menu-icon {
+        display: none;
+        font-size: 25px;
+        cursor: pointer;
+    }
+
+    
+    .products {
+        padding: 20px;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 20px;
+    }
+
+    .product-box {
+        background: white;
+        padding: 15px;
+        border-radius: 8px;
+        text-align: center;
+        box-shadow: 0 3px 7px rgba(0,0,0,0.1);
+    }
+
+    .fake-img {
+        height: 120px;
+        background: linear-gradient(to bottom right, #ff6a00, #ffb380);
+        border-radius: 8px;
+        margin-bottom: 10px;
+    }
+
+    button {
+        padding: 8px 15px;
+        background: orange;
+        border: none;
+        color: white;
+        border-radius: 4px;
+        cursor: pointer;
+    }
+    button:hover {
+        background: darkorange;
+    }
+
+    
+    @media (max-width: 700px) {
+        .nav-links {
+            display: none;
+            flex-direction: column;
+            background: #ff6a00;
+            width: 100%;
+            text-align: center;
+            padding: 10px 0;
+        }
+
+        .nav-links a {
+            padding: 10px 0;
+            display: block;
+        }
+
+        .menu-icon {
+            display: block;
+        }
+
+        .products {
+            grid-template-columns: repeat(2, 1fr);
+        }
+    }
+
+    @media (max-width: 500px) {
+        .products {
+            grid-template-columns: 1fr;
+        }
+    }
+</style>
+
+<script>
+    function toggleMenu() {
+        let links = document.getElementById("links");
+        if (links.style.display === "flex") {
+            links.style.display = "none";
+        } else {
+            links.style.display = "flex";
+        }
+    }
+</script>
+
+</head>
+<body>
+
+
+<div class="navbar">
+    <div class="logo"> ShopEasy</div>
+
+    <div id="links" class="nav-links">
+        <a href="#">Home</a>
+        <a href="#">Products</a>
+        <a href="#">Offers</a>
+        <a href="#">Contact</a>
+    </div>
+
+    <div class="menu-icon" onclick="toggleMenu()">☰</div>
+</div>
+
+
+
+<h2 style="text-align:center; margin-top:20px;"> Featured Products</h2>
+
+<div class="products">
+    <div class="product-box">
+        <div class="fake-img"></div>
+        <h3>Smart Watch</h3>
+        <p>$49.00</p>
+        <button>Add to Cart</button>
+    </div>
+
+    <div class="product-box">
+        <div class="fake-img"></div>
+        <h3>Wireless Earbuds</h3>
+        <p>$29.00</p>
+        <button>Add to Cart</button>
+    </div>
+
+    <div class="product-box">
+        <div class="fake-img"></div>
+        <h3>Bluetooth Speaker</h3>
+        <p>$39.00</p>
+        <button>Add to Cart</button>
+    </div>
+
+    <div class="product-box">
+        <div class="fake-img"></div>
+        <h3>Gaming Mouse</h3>
+        <p>$19.00</p>
+        <button>Add to Cart</button>
+    </div>
+</div>
+
+</body>
+</html>
